@@ -223,32 +223,6 @@ nmap -sV -iL <(cut -d: -f1 open_ports.txt | sort -u)
 nmap --script vuln target.com
 ```
 
----
-
-## 📊 Workshop Structure
-
-### 1. Introduction (10 minutes)
-- Overview of VAPT methodology
-- Container environment introduction
-- Tool categories explanation
-
-### 2. Hands-on Demonstrations (40 minutes)
-- 4 minutes per tool demonstration
-- Live examples with real targets (ethically)
-- Q&A during demonstrations
-
-### 3. Practical Exercise (20 minutes)
-- Students practice tool chaining
-- Guided exercise on test environment
-- Troubleshooting common issues
-
-### 4. Wrap-up (10 minutes)
-- Best practices discussion
-- Resource sharing
-- Next steps for learning
-
----
-
 ## 🔧 Troubleshooting Commands
 
 ### Container Management
