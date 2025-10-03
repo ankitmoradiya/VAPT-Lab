@@ -12,7 +12,7 @@
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/ankitmoradiya/Workshop2025.git
-cd Workshop2025/VAPT\ Lab/
+cd '.\Workshop2025\VAPT Lab\'
 ```
 
 ### 2. Launch Lab Environment
