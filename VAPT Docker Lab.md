@@ -24,7 +24,7 @@ docker-compose build
 docker-compose up -d
 
 # Access lab shell
-docker exec -it vapt_lab_container /bin/zsh
+docker exec -it vaptlab_container /bin/bash 
 ```
 
 ### 3. Verify Installation
