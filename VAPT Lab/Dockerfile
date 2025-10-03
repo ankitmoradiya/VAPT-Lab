@@ -29,7 +29,6 @@ ENV PATH ${GOPATH}/bin:${GOROOT}/bin:${PATH}
 # Install Go-based security tools
 RUN go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 RUN go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-RUN go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 RUN go install -v github.com/ffuf/ffuf@latest
 RUN go install -v github.com/tomnomnom/assetfinder@latest
 RUN go install -v github.com/tomnomnom/waybackurls@latest
