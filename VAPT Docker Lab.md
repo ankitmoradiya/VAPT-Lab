@@ -31,7 +31,6 @@ docker exec -it vaptlab_container /bin/bash
 ```bash
 # Check tools
 subfinder -version
-nuclei -version
 nmap --version
 ```
 
@@ -57,20 +56,6 @@ sublist3r -d example.com -o results.txt
 ```bash
 cat subdomains.txt | httpx -o alive.txt
 httpx -u https://example.com -tech-detect
-```
-
-### Vulnerability Scanning
-
-**NUCLEI** - Template-based scanner
-```bash
-# Basic scan
-nuclei -u https://example.com
-
-# High severity only
-nuclei -u https://example.com -severity high,critical
-
-# Multiple targets
-nuclei -l urls.txt -o vulnerabilities.txt
 ```
 
 ### Directory & File Discovery
@@ -233,15 +218,6 @@ chmod +x /root/toolkit/*/
 - [SecLists Wordlists](https://github.com/danielmiessler/SecLists)
 - [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates)
 - [Bug Bounty Methodology](https://github.com/jhaddix/tbhm)
-
----
-
-## 💬 Support
-
-For issues or questions:
-- Open an issue on GitHub
-- Check tool documentation
-- Review Docker logs
 
 ---
 
