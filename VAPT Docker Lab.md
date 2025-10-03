@@ -169,22 +169,6 @@ docker-compose down
 # Rebuild
 docker-compose down -v && docker-compose up --build -d
 ```
-
-### Volume Location (WSL2)
-```
-\\wsl$\docker-desktop-data\data\docker\volumes\vapt_toolkit
-```
-
----
-
-## 🔧 Maintenance
-
-### Update Tools
-```bash
-nuclei -update-templates
-subfinder -up
-```
-
 ### Fix Permissions
 ```bash
 chmod +x /root/toolkit/*/
