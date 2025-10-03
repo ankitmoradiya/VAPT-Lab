@@ -1,0 +1,21 @@
+
+version: '3.8'
+
+services:
+  vaptlab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vaptlab_container
+    environment:
+      - HOME=/root
+      - DEBIAN_FRONTEND=noninteractive
+    volumes:
+      - toolkit_data:/root/toolkit
+      - datasharing:/root/datasharing:rw
+    tty: true
+    stdin_open: true
+
+volumes:
+  toolkit_data:
+  datasharing:
